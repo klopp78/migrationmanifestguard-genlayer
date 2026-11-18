@@ -35,7 +35,7 @@ const manifest = {
 
 assert.equal(sha(canonical(manifest)).length, 64, "manifest must have a stable SHA-256 commitment");
 assert.match(source, /py-genlayer:kzybg95x1gn21dw72m7hyg0maaap04n4nx55j9yt6fkdqxtz6bz0/);
-assert.match(source, /import genlayer\.gl as gl/);
+assert.match(source, /from genlayer import gl/);
 assert.match(source, /gl\.vm\.run_nondet_unsafe/);
 assert.match(source, /source_commitment/);
 assert.match(source, /state_plan_hash/);

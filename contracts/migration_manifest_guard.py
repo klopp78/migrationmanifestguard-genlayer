@@ -8,7 +8,7 @@ before moving a production integration to a new GenVM runner.
 """
 
 from genlayer import *
-import genlayer.gl as gl
+from genlayer import gl
 import hashlib
 import json
 
